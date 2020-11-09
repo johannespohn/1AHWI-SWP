@@ -1,0 +1,17 @@
+td, th {
+    border: 1px solid gray;
+    padding: 10px; /* Abstand in jde Seite */
+}
+h1 {
+           border-bottom: 1px dashed black;
+           color: cyan;
+           font-variant: small-caps;
+
+}
+table {
+    border-collapse: collapse;
+    
+}
+th {
+    font-variant: small-caps;
+}
