@@ -1,0 +1,51 @@
+th, td {
+    border: solid grey;
+    padding: 10 px;
+}
+h1 {
+    font-variant: small-caps;
+    color: cyan;
+    border-bottom: 1px dashed black;
+}
+table {
+    border-collapse: collapse;
+}
+.ggp {
+    background-color: blue;
+}
+.d {
+    background-color: darkgreen;
+}
+.navi {
+    background-color: lightyellow;
+}
+.mt {
+    background-color: lightgreen;
+}
+.am {
+    background-color: cyan;
+}
+.swp {
+    background-color: brown;
+}
+.rk {
+    background-color: orangered;
+}
+.bet {
+    background-color: grey;
+}
+.e {
+    background-color: red;
+}
+.infi {
+    background-color: sienna;
+}
+.wpt {
+    background-color: steelblue;
+}
+.besp {
+    background-color: darkorchid;
+}
+.sopk {
+    background-color: lightcoral;
+}
