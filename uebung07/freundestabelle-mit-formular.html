@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <title>Freundestabelle mit Formular</title>
+        <link rel="stylesheet" href="uebung07.css" /> 
+    </head>
+    <body>
+        <h1>Meine Freunde</h1>
+        <form><lable>
+            Vorname:
+            <input type="text" name="firstName" />
+        </lable>
+        <br/>
+        <lable>
+            Nachname:
+            <input type="text" name="lastName" />
+        </lable>
+        <br/>
+        <lable>
+            Geburtsdatum:
+            <input type="date" name="birthday" />
+        </lable>
+        <br/>
+        <lable>
+            Geschlecht:
+            <input type="radio" checked name="gender" /> <value>Männlich</value>
+            <input type="radio" name="gender"/> <value>Weiblich</value>
+            <input type="radio" name="gender"/> <value>Divers</value>
+        </lable>
+        <br/>
+        <lable>
+            Hobbys:
+            <input type="checkbox" name="hobbies"/> <value>Turnen</value>
+            <input type="checkbox" name="hobbies"/> <value>Fußball</value>
+            <input type="checkbox" name="hobbies"/> <value>Radfahren</value>
+            <input type="checkbox" name="hobbies"/> <value>Kartfahren</value>
+            <input type="checkbox" name="hobbies"/> <value>Laufen</value>
+            <input type="checkbox" name="hobbies"/> <value>Eislaufen</value>
+            <input type="checkbox" name="hobbies"/> <value>Reiten</value>
+            <input type="checkbox" name="hobbies"/> <value>Essen</value>
+            <input type="checkbox" name="hobbies"/> <value>Singen</value>
+            <input type="checkbox" name="hobbies"/> <value>Tanzen</value>
+            <input type="checkbox" name="hobbies"/> <value>Lesen</value>
+            <input type="checkbox" name="hobbies"/> <value>Basteln</value>
+            <input type="checkbox" name="hobbies"/> <value>Tennis</value>
+            <input type="checkbox" name="hobbies"/> <value>Baseball</value>
+            <input type="checkbox" name="hobbies"/> <value>Kickboxen</value>
+            <input type="checkbox" name="hobbies"/> <value>Badminten</value>
+            <input type="checkbox" name="hobbies"/> <value>Schwimmen</value>
+            <input type="checkbox" name="hobbies"/> <value>Leichtartletik</value>
+            <input type="checkbox" name="hobbies"/> <value>Bogenschießen</value>
+            <input type="checkbox" name="hobbies"/> <value>Fechten</value>
+            <input type="checkbox" name="hobbies"/> <value>Musizieren</value>
+            <br/>
+            <input type="checkbox" name="hobbies"/> <value>Karate</value>
+            <input type="checkbox" name="hobbies"/> <value>Zeichnen</value>
+            <input type="checkbox" name="hobbies"/> <value>Backen</value>
+            <input type="checkbox" name="hobbies"/> <value>Shoppen</value>
+            <input type="checkbox" name="hobbies"/> <value>Turmspringen</value>
+        </lable>
+        <br/>
+        <lable>
+            Lieblingsfach:
+            <select name="favoriteSchoolSubject">
+                <option>-Bitte-Auswählen-</option>
+                <option>SWP</option>
+                <option>Turnen</option>
+                <option>Deutsch</option>
+                <option>Mathe</option>
+                <option>Englisch</option>
+                <option>Zeichnen</option>
+                <option>Geometrisches Zeichnen</option>
+                <option>Informatik</option>
+            </select>
+        </lable>
+        <br/>
+        <lable>
+            Bemerkung:
+            <textarea name="info" cols="40" rows="2" placeholder="Zusatzinformationen zum Freund, z.B von wo du ihn kennst"></textarea>
+        </lable>
+        <br/>
+        <lable>
+            Lieblingsfarbe:
+            <input type="color" name="favoriteColor"/>
+        </lable>
+        <br/>
+        <lable>
+            <input type="submit" value="Freund Hinzufügen"/> 
+        </lable>
+    </form>
+       
+        <table>
+           <thead> <!-- Kopfzeilenbereich-->
+            <tr> <!-- Tabellenzeile-->
+                <th>Vorname</th> <!-- Überschriftenspalte-->
+                <th>Nachname</th>
+                <th>Geburtsdatum</th>
+                <th>Geschlecht</th>
+                <th>Hobbys</th>
+                <th>Lieblingsfach</th>
+                <th>Bemerkung</th>
+                <th>Lieblingsfarbe</th>
+            </tr>           
+           </thead> 
+           <tbody> <!-- Tabellendatenbereich-->
+            <tr>
+                <td>Alexander</td>  <!-- Datenspalte-->
+                <td>Gründlinger</td>
+                <td>2005</td> 
+                <td>Männlich</td>
+                <td>Radfahren</td>
+                <td rowspan="10">SWP</td>  
+                <td>Ich habe mich mit vor 5 Jahren im Fußball Verein Kennengelernt seit dem ist er mein bester Freund</td>   
+                <td class="black"></td>                
+            </tr>
+            <tr>
+                <td>Manuel</td>
+                <td>Fürtbauer</td>
+                <td>2006</td>
+                <td>Männlich</td>
+                <td>Kartfahren</td>
+                <!-- <td>SWP</td> --> <!--Auskommentieren: STRG + #-->
+                <td>Sehr Lustiger Freund mit dem man immer Spaß hat.</td>
+                <td class="blue"></td>
+            </tr>
+            <tr>
+                <td>Matthias</td>
+                <td>Schoberleitner</td>
+                <td>2007</td>
+                <td>Männlich</td>
+                <td rowspan="5">Fußball</td> 
+                <!-- <td>SWP</td> -->
+                <td>Nachbar, habe ich schon sehr bald kennengelernt, denn unsere Eltern sind auch befreundet.</td>
+                <td class="blue"></td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>Stockinger</td>
+                <td>2006</td>
+                <td>Männlich</td>
+                <!-- <td>Fußball</td>  -->
+                <!-- <td>SWP</td> -->
+                <td>Nachbar habe ich schon sehr bald kennengelernt, doch sind erst sseit kurzem gut befreundet.</td>
+                <td class="blue"></td>
+            </tr>
+            <tr>
+                <td>Felix</td>
+                <td>Pöll</td>
+                <td>2005</td>
+                <td>Männlich</td>
+                <!-- <td>Fußball</td> -->
+                <!-- <td>SWP</td> -->
+                <td>In der neun Schule kennengelernt, schon sehr gut befreundet.</td>
+                <td class="blue"></td>
+            </tr>
+            <tr>
+                <td>Marko</td>
+                <td>Krezic</td>
+                <td>2006</td>
+                <td>Männlich</td>
+                <!-- <td>Fußball</td> -->
+                <!-- <td>SWP</td> -->
+                <td>In der neuen Schule kennengelernt, schon sehr gut befreundet.</td>
+                <td class="blue"></td>
+            </tr>
+            <tr>
+                <td>Simon</td>
+                <td>Söser</td>
+                <td>2007</td>
+                <td>Männlich</td>
+                <!-- <td>Fußball</td> -->
+                <!-- <td>SWP</td> --> 
+                <td>Im Turnverein kennengelernt.</td>
+                <td class="blue"></td>
+            </tr>
+            <tr>
+                <td>Celina</td>
+                <td>Ketter</td>
+                <td>2006</td>
+                <td>Weiblich</td>
+                <td>Turnen</td>
+                <!-- <td>SWP</td> -->
+                <td>Im Turnverein kennengelernt</td>
+                <td class="black"></td>  
+            </tr>
+            <tr>
+                <td>Martha</td>
+                <td>Spitzbart</td>
+                <td>2006</td>
+                <td>Weiblich</td>
+                <td>Bogenschießen</td>
+                <!-- <td>SWP</td> --> 
+                <td>In meiner alten Schule kennengelernt und jetzt ist sie meine beste Freundinn</td>
+                <td class="blue"></td>
+            </tr>
+            <tr>
+                <td>Nina</td>
+                <td>Hittmayer</td>
+                <td>2005</td>
+                <td>Weiblich</td>
+                <td>shoppen</td>
+                <!-- <td>SWP</td> -->  
+                <td>In der alten Schule kennengelernt und jetzt sind wir beste Freunde</td>
+                <td class="blue"></td>
+            </tr>
+           </tbody>
+        </table>
+        <script>
+            let form = document.querySelector("form")
+            form.onsubmit = event =>
+            {
+                // alert("Formular wird abgesendet")
+                event.preventDefault()
+        
+                try
+                {
+                    let getInput = name =>
+                    {
+                        let element = document.querySelector(`[name=${name}]`)
+                        if (!element)
+                        {
+                            throw `Kein Eingabefeld mit dem Namen '${name}' gefunden.`
+                        }
+                        return element
+                    }
+                    let getInputs = name =>
+                    {
+                        let elements = Array.from(document.querySelectorAll(`[name=${name}]`))
+                        if (!elements.length)
+                        {
+                            throw `Kein Eingabefeld mit dem Namen '${name}' gefunden.`
+                        }
+                        return elements
+                    }
+                    let getInputValue = name => getInput(name).value
+                    let getRadioButtonValue = name =>
+                    {
+                        let checkedElements = getInputs(name).filter(e => e.checked)
+                        if (!checkedElements.length)
+                        {
+                            throw `Für Eingabefeld '${name}' muss es eine Auswahl geben (Standardauswahl mit Attribut 'checked' festlegen).`
+                        }
+                        return checkedElements[0].value
+                    }
+                    let getCheckboxValues = name => getInputs(name).filter(e => e.checked).map(e => e.value)
+                    let getComboboxValue = name =>
+                    {
+                        let element = getInput(name).querySelector("option:not(:first-of-type):checked")
+                        return element ? element.value : ""
+                    }
+        
+                    let firstName = getInputValue("firstName")
+                    let lastName = getInputValue("lastName")
+                    let birthday = getInputValue("birthday")
+                    let gender = getRadioButtonValue("gender")
+                    let hobbies = getCheckboxValues("hobbies")
+                    let favoriteSchoolSubject = getComboboxValue("favoriteSchoolSubject")
+                    let info = getInputValue("info")
+                    let favoriteColor = getInputValue("favoriteColor")
+        
+                    if (!firstName || !lastName)
+                    {
+                        alert("Vorname und Nachname bitte ausfüllen.")
+                        return
+                    }
+        
+                    console.log(`Adding friend: FirstName = ${firstName}, LastName = ${lastName}, Birthday = ${birthday}, Gender = ${gender}, Hobbies = ${hobbies.join(", ")}, Favorite school subject = ${favoriteSchoolSubject}, Info = ${info}, FavoriteColor = ${favoriteColor}`)
+        
+                    let tableBody = document.querySelector("table tbody")
+                    let row = document.createElement("tr")
+                    
+                    let addCell = text =>
+                    {
+                        let cell = document.createElement("td")
+                        cell.innerText = text
+                        return row.appendChild(cell)
+                    }
+        
+                    addCell(firstName)
+                    addCell(lastName)
+                    addCell(birthday || "N/A")
+                    addCell(gender)
+                    addCell(hobbies.join(", ") || "-")
+                    addCell(favoriteSchoolSubject || "-")
+                    addCell(info || "-")
+                    let favoriteColorCell = addCell("")
+                    favoriteColorCell.style.background = favoriteColor
+        
+                    tableBody.appendChild(row)
+                    
+                    form.reset()
+                }
+                catch (e)
+                {
+                    alert(`FEHLER: ${e}`)
+                }
+            }
+        </script>
+    </body>
+</html>

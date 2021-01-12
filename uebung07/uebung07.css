@@ -1,0 +1,23 @@
+h1 {
+    font-variant:  small-caps;
+    color: cyan;
+    border-bottom: 1px dashed black;
+}
+th, td {
+    border: solid grey;
+    padding: 10 px;
+}
+table {
+    border-collapse: collapse;
+    
+}
+.blue {
+    background-color: blue;
+}
+.black {
+    background-color: black;
+}
+html {
+    background-image: url(istockphoto-1166351637-170667a.jpg);
+    background-size: cover;
+}

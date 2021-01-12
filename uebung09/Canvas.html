@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+     <head>
+    <meta charset="UTF-8">
+    <title>Auf einem Canvas zeichnen</title>
+    <style>
+        #scene {
+            border: 1px dotted black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Auf einem Canvas zeichnen</h1>
+    <canvas id="scene" width="500" height="500">Dein Browser unterstütz das Canvas-Element nicht.</canvas>
+    <script>
+        // mit '//' bzw. '/*' und '*/' kann Javascript-code kommentiert werden
+        // (wie '<!--' bzw. '--!>' in HTML)
+        /** @type {CanvasRenderingContext2D}*/
+        let ctx = scene.getContext("2d") // 2D-Zeichenkontext des Canvas holen und als 'ctx' definieren
+        ctx.fillRect(10, 5, 20, 10)
+        // Rechteck füllen: x=10 y=5 Breite=20 Höhe=10
+        //Aufgabe:
+        //   *10x10-Quadrat oben rechts
+        //   * stehendes 10x120 Rechteck rechts  mittig
+        //   * liegendes 30x15 Rechteck rechts unten
+        ctx.fillRect(490, 0, 10, 10)
+        ctx.fillRect(490, 190, 10, 120)
+        ctx.fillRect(470, 485, 30, 15)
+        ctx.fillStyle = "red"
+        // Benamte Farben: https://www.w3schools.com/colors/colors_name.asp 
+        ctx.fillRect(50, 50, 20, 40)
+
+        //aufgabe
+        //  *Drei Stufen, die von links nach rehts hochgeht.
+        //   *Unterste (laengste) Stufe "ForestGreen"
+        ctx.fillStyle = "ForestGreen"
+        ctx.fillRect(150, 150, 70, 20)
+        //    *Mittlere Stufe "LimeGreen"
+        ctx.fillStyle = "LimeGreen"
+        ctx.fillRect(170, 130, 50, 20)
+        //     *Oberste Stufe "GreenYellow"
+        ctx.fillStyle = "GreenYellow"
+        ctx.fillRect(190, 110, 30, 20)
+        // Randfarbe ändern (standart schwarz)
+        ctx.strokeStyle="purple"
+        // Strichstärke für ränder ändern
+        ctx.lineWidht = 10
+        // Rechteck umranden
+        ctx.strokeRect(150, 20, 50, 50)
+
+        // Umrandetes Rechteck mit teiltransperenter Farbe füllen
+        // (beachte, wo der Rand genau gezeichnet wird)
+        ctx.fillStyle = "#999999CC"
+        ctx.fillRect(150, 20, 50, 50)
+    </script>
+</body>
+</html>
